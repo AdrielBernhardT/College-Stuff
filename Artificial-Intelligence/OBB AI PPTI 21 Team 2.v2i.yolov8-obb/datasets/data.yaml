@@ -1,0 +1,9 @@
+
+path: /home/abe-tanu/Documents/Code/Python/Artificial-Intelligence/OBB AI PPTI 21 Team 2.v2i.yolov8-obb/datasets
+
+train: train/images
+val: valid/images
+test: test/images
+
+nc: 4
+names: ['Adriel Bernhard T', 'Jonea Kristiawan', 'Kevin Jiovanni Kuslin', 'Kevin Tanwiputra']
