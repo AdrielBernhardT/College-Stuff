@@ -1,0 +1,115 @@
+:root {
+    --header-height: 70px;
+    --container-color: rgba(20, 20, 20, 0.9);
+    --title-color: #ffffff;
+    --text-color: #e0e0e0;
+    --accent: #ff4655; /* Valorant red accent */
+    --h1-font-size: 1.8rem;
+    --font-semi-bold: 600;
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #0f1923; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    height: var(--header-height);
+    background-color: var(--container-color);
+    color: var(--title-color);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-semi-bold);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid var(--accent);
+}
+
+.bg-report {
+    background-image: url(../../Asset/PNG/ValorantReportBackground.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    height: 65%;
+    background-color: rgba(128,128,128, 0.8);
+    color: var(--text-color);
+}
+
+.news-title{
+    font-size: 2rem;
+    font-weight: var(--font-semi-bold);
+    margin-bottom: 1rem;
+    color: var(--title-color);
+    text-align: center;
+    max-width: 50vw;
+    line-height: normal;
+}
+
+.news-description{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    text-align: center;
+    padding: 0 1rem;
+    max-width: 75vw;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.news-image {
+    margin-top: 25px;
+    width: 50%;
+    border: 2px solid var(--accent);
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 75%;
+        height: 70%;
+    }
+
+    .news-description{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 25px;
+    }
+}
